@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IESA - Instituto de Estudios Superiores Argentino</title>
+<style>
+  :root {
+    --accent: #7b0d1e;
+    --secondary: #333;
+    --muted: #555;
+  }
+  body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    margin: 0;
+    color: #222;
+    background: #fafafa;
+  }
+  header {
+    background: linear-gradient(90deg, var(--accent), #a52c36);
+    color: white;
+    padding: 20px;
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .brand { display: flex; gap: 16px; align-items: center; }
+  .logo img { width: 70px; height: auto; display: block; }
+  h1 { margin: 0; font-size: 22px; }
+  p.lead { margin: 4px 0 0; color: #f4f4f4; }
+  nav { margin-left: auto; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.15);
+    transition: background 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.3); }
+  .header-flex { display: flex; justify-content: space-between; align-items: center; }
+  main {
+    background: white;
+    margin-top: -20px;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  }
+  .grid { display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+  section.card { padding: 18px; border-radius: 10px; background: #fdfdfd; border:1px solid #eee; margin-bottom: 20px; }
+  .meta { font-size: 14px; color: var(--muted); }
+  .cta {
+    display:inline-block; margin-top:12px; padding:10px 14px;
+    border-radius:8px; background:var(--accent); color:white;
+    text-decoration:none; transition:background .2s;
+  }
+  .cta:hover { background:#5c0a17; }
+  footer { margin-top:18px; padding:18px 0; text-align:center; color:var(--muted); font-size:14px; }
+  .oferta-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:14px; }
+  .oferta-item { border:1px solid #eee; border-radius:8px; overflow:hidden; background:white; box-shadow:0 3px 6px rgba(0,0,0,0.05); }
+  .oferta-item img { width:100%; height:140px; object-fit:cover; display:block; }
+  .oferta-item h4 { margin:10px; padding:0; font-size:16px; color:var(--secondary); }
+  @media (max-width:900px) {
+    .grid { grid-template-columns:1fr; }
+    .brand { flex-direction:column; align-items:flex-start; }
+    nav { margin:12px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo IESA">
+      </div>
+      <div>
+        <h1>Instituto de Estudios Superiores Argentino (IESA)</h1>
+        <p class="lead">Formación superior técnica y profesional con foco práctico y vinculación laboral.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="http://localhost/centrofp/login.php">Gestión de Alumnos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="grid">
+    <div>
+      <section class="card">
+        <h2>Sobre el instituto</h2>
+        <p class="meta">(Resumen público)</p>
+        <p>IESA (Instituto de Estudios Superiores Argentino) es un instituto de educación superior no universitaria que ofrece tecnicaturas, cursos y formación práctica orientada al mundo profesional. Su propuesta hace hincapié en la enseñanza aplicada y la articulación con el sector laboral.</p>
+      </section>
+
+      <section class="card">
+        <h2>Oferta académica</h2>
+        <p class="meta">Programas destacados</p>
+        <div class="oferta-grid">
+          <div class="oferta-item">
+            <img src="img/administracion.jpg" alt="Operador PC: Ofimatíca">
+            <h4>Operador PC: Ofimatíca</h4>
+          </div>
+          <div class="oferta-item">
+            <img src="img/carpinteria.jpg" alt="Carpintero Basico">
+            <h4>Carpintero Basico</h4>
+          </div>
+          <div class="oferta-item">
+            <img src="img/electricidad.jpg" alt="Diseño Asistido por Computadora (AutoCad)">
+            <h4>Diseño Asistido por Computadora (AutoCad)</h4>
+          </div>
+          <div class="oferta-item">
+            <img src="img/herramientas.jpg" alt="Capacitación en Herramientas Digitales">
+            <h4>Capacitación en Herramientas Digitales</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Inscripciones y pruebas</h2>
+        <p class="meta">Fechas y requisitos suelen actualizarse en los canales oficiales.</p>
+        <p>Para conocer planes de estudio, requisitos de ingreso y fechas de inscripción, contacta con la sede local o visita el sitio oficial.</p>
+      </section>
+    </div>
+
+    <aside>
+      <section class="card">
+        <h3>Contacto</h3>
+        <p class="meta">Sede registrada</p>
+        <p><strong>Dirección:</strong><br>Mitre 2070, Posadas, Provincia de Misiones</p>
+        <p><strong>Sitio web:</strong><br><a href="https://iesaeducativo.com" target="_blank" rel="noopener">iesaeducativo.com</a></p>
+        <p><strong>Redes:</strong><br>LinkedIn / Facebook / Instagram (buscar: IESA)</p>
+        <a class="cta" href="https://iesaeducativo.com" target="_blank">Visitar sitio oficial</a>
+      </section>
+
+      <section class="card">
+        <h3>Ubicación</h3>
+        <p class="meta">Mapa</p>
+        <p>La sede central listada aparece en Mitre 2070, Posadas.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <small>Esta página fue generada como borrador. Verifica teléfonos, emails, horarios y logos antes de publicar.</small>
+  </footer>
+</main>
+
+</body>
+</html>
+
